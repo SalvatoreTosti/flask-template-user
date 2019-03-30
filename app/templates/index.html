@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block headmeta %}
+	<title>Flask Demo</title>
+{% endblock %}
+{% block scripts %}
+    <script type='text/javascript' src="{{ url_for('static',filename='js/index.js') }}"></script>
+{% endblock %}
+{% block css %}
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/index.css') }}">
+{% endblock %}
+{% block content %}
+<div class='flex-column center'>
+    <h1 class='text-center hilight-fg text-shadow'>Static Site Demo! 🚀</h1>
+    <div class='hilight-fg text-shadow'>A Flask Demo</div>
+</div>
+{% endblock %}
