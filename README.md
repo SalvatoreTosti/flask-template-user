@@ -1,6 +1,6 @@
 # Flask Template
 
-This project is a starter template used for Flask projects.
+This project is a starter template used for Flask projects.  
 It's designed to let you start building your app with a minimal amount of setup.
 
 ## Getting Started
@@ -29,9 +29,7 @@ If you have the Heroku commandline tools installed, you can run the app with `he
 
 ## Built With
 
-* [Flask](http://flask.pocoo.org/) - The web framework used
-
-
+* [Flask](http://flask.pocoo.org/)
 
 ## Authors
 
