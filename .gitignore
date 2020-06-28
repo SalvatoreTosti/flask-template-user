@@ -13,3 +13,6 @@ Thumbs.db
 *.pyc
 
 env/
+*.db
+.hypothesis
+*.un~

@@ -3,11 +3,10 @@
 	<title>Login</title>
 {% endblock %}
 {% block css %}
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/index.css') }}">
 {% endblock %}
 {% block content %}
-
-    <div class='padded text-center'>
+<main role="main" class="pt-5">
+    <div class='p-5 text-center'>
         <h1>Sign In</h1>
         
         {% with messages = get_flashed_messages() %}
@@ -22,11 +21,13 @@
         
         <form action='/login' method='post'>
             <div class='form-row'>
-                <div class="form-group col-12">
+                <div class="form-group col-10 offset-1 col-lg-4 offset-lg-4">
                     <label for="input-username">Username</label>
                     <input type="text" class="form-control" name='username'id="input-username"  placeholder="Enter username">
                 </div>
-                <div class="form-group col-12">
+            </div>
+            <div class='form-row'>
+                <div class="form-group col-10 offset-1 col-lg-4 offset-lg-4">
                     <label for="input-password">Password</label>
                     <input type="password" class="form-control" name='password' id="input-password" placeholder="Enter password">
                 </div>
@@ -34,4 +35,5 @@
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
+</main>
 {% endblock %}
